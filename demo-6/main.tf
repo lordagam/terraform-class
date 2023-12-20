@@ -6,7 +6,7 @@ module "module-ec2" {
     TagName  = var.TagName
     vpc_id   = aws_default_vpc.default.id
     subnets  = {
-        "0"  = aws_default_subnet.default_az1.id
+    #    "0"  = aws_default_subnet.default_az1.id
         "1"  = aws_default_subnet.default_az2.id
         "2"  = aws_default_subnet.default_az3.id
     }

@@ -51,7 +51,7 @@ variable "region" {
 }
 
 variable "servers" {
-    default = 3
+    default = 2
     description = "the number of server to launch "
   
 }
