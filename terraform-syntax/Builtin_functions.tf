@@ -20,3 +20,20 @@ Timestamp
     timestamp()
 
     2023-12-20T19:05:00
+
+
+Split
+
+    split("_",["app_front_instance"])
+        ["app","front","instance"]
+
+
+
+concat
+
+
+    concat(["a","b"],["c","d"])
+    ["a","b","c","d"]
+
+
+    
