@@ -8,6 +8,8 @@ locals {
   eks_create_aws_auth_configmap       = false
   eks_manage_aws_auth_configmap       = true
   region = "eu-west-2"
+  vpc_id = "vpc-01a74fcbb64cc0b75"
+  subnet_id = ["subnet-0175e2013f409f607", "subnet-07f58e08ac8ecd6c4", "subnet-0088dbf20a826a78e"]
   
   # EKS allowed users
   aws_auth_users = [
@@ -18,13 +20,5 @@ locals {
     }
   ]
   
-  # VPC variables
-  vpc_cidr                             = "10.0.0.0/16"
-  vpc_enable_nat_gateway               = true
-  vpc_enable_single_nat_gateway        = true
-  availability_zone                    = ["${local.region}a", "${local.region}b", "${local.region}c"]
-  tags = {
-    Name            = "${local.env}-${local.project}"
-    Environment     = "${local.env}"
-  }
+
 }
