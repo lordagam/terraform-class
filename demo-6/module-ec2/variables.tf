@@ -17,6 +17,7 @@ variable "ami" {
     description = "AWS AMI ID"
 
     default = {
+        us-west-3-ubuntu    = "ami-01d21b7be69801c2f"
         us-east-1-ubuntu    = "ami-0c7217cdde317cfec"
         eu-west-1-ubuntu    = "ami-0905a3c97561e0b69"
         eu-central-1-ubuntu = "ami-0faab6bdbac9486fb"
