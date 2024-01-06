@@ -1,4 +1,4 @@
-resource "aws_instance" "lidor-example" {
+resource "aws_instance" "jo-example" {
     count         = 1
     ami           = "${var.AMIS[var.region]}"
     instance_type = "t2.micro"
