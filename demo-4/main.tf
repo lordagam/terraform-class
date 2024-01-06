@@ -3,13 +3,13 @@ resource "aws_instance" "jo-example" {
     ami           = "${var.AMIS[var.region]}"
     instance_type = "t2.micro"
     provisioner "local-exec" {
-        command = "echo ${aws_instance.lidor-example[0].private_ip} >> private_ips.txt"
+        command = "echo ${aws_instance.jo-example[0].private_ip} >> private_ips.txt"
     }
 }
 
 
 output "ip" {
-    value = aws_instance.lidor-example[0].public_ip
+    value = aws_instance.jo-example[0].public_ip
 }
 
 
